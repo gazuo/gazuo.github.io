@@ -1,2 +1,9 @@
-title: Test title
-description:  Test description
+title: 王壮壮记事本
+SEOTitle: 王壮壮的博客 | aaawanxiao Blog
+header-img: img/home-bg-hill.jpg
+email: wanxiao@jianbanwa.com
+description: "一个程序爱好者，一个苦逼程序员,有着不安小情绪，怀揣一些小梦想"
+keyword: "王壮壮, jiabanwa"
+url: "https://aaawanxiao.github.io"
+baseurl: ""
+...
