@@ -15,7 +15,8 @@ f();
 
 很多人会说是hello world,但是结果是 undefined,为什么会这样？这种就引出一个概念--hoisting
 
-[^hoisting]: var hoistingBecause variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to declaring it at the top. This also means that a variable can appear to be used before it's declared. This behavior is called "hoisting", as it appears that the variable declaration is moved to the top of the function or global code.
+var hoisting
+    Because variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to declaring it at the top. This also means that a variable can appear to be used before it's declared. This behavior is called "hoisting", as it appears that the variable declaration is moved to the top of the function or global code.
 
 这段话翻译下来就是
 
