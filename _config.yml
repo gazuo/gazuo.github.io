@@ -1,7 +1,7 @@
 # Site settings 配置站点
-title: '王壮壮的独立博客'
+title: '加班娃'
 description: ''
-keyword: '王壮壮, 王壮壮的独立博客, 王壮壮的博客, 前端, 前端开发, Creator,Laya,Egret,javascript'
+keyword: 'jiabanwa, jiabanwa.cn,加班娃,王壮壮, 王壮壮的独立博客, 王壮壮的博客, 前端, 前端开发, Creator,Laya,Egret,javascript'
 url: '' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
