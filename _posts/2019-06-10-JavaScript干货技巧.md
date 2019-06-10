@@ -18,8 +18,18 @@ tags: [javaScript]
 if(foo){
     console.log("foo存在");
 }
+
+if(!foo){
+    console.log("foo存在");
+}
+
+
+if(window["foo"] == undefined){
+  console.log("foo不存在");
+}
+
 ```
-这样是会直接报错的。
+这样是都会直接报错的。
 
 ```js
 if(typeof foo !== undefined){
@@ -27,5 +37,16 @@ if(typeof foo !== undefined){
 }
 ```
 这样就不会错报错。
-答案应该使用 typeof 来进行判断，直接使用if 判断如果不存在就会报错，但是使用if 和typeof 组合就不会报错了。
+答案应该使用 typeof 来进行判断，直接使用if 判断如果不存在就会报错未定义 ，但是使用if 和typeof 组合就不会报错了。
+
+应用场景比如判断当前是node环境还是引用环境
+node环境需要用到module.exports，但是引用环境不一定有module这个东西
+```
+if(typeof module == undefined){
+    module.exports = foo;
+}
+```
+
+
+
  
