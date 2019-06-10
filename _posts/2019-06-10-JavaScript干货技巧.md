@@ -41,6 +41,7 @@ if(typeof foo !== undefined){
 
 应用场景比如判断当前是node环境还是引用环境
 node环境需要用到module.exports，但是引用环境不一定有module这个东西
+
 ```
 if(typeof module == undefined){
     module.exports = foo;
