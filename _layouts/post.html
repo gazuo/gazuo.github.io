@@ -130,7 +130,7 @@
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
    
     var disqus_config = function () {
-        this.page.url = '{{post.url}}';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = {% include post-head.html %};  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = '222222222'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     
