@@ -1,6 +1,6 @@
 ---
 title:  Python 打包成exe程序
-subtitle: 'Python'
+subtitle: 'exe不用关心Python环境问题'
 author: 王壮壮
 layout: post
 date: 2019-11-5
