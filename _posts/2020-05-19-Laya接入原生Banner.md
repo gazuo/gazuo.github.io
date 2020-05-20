@@ -49,6 +49,7 @@ tags: [Laya]
 
 
 2. 主文件修改android界面布局文件。分成游戏容器和banner容器
+
 ```
 	//找到MainActivity.java
 	public void initEngine()
