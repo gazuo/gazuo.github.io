@@ -20,7 +20,7 @@ tags: [Laya]
 1. 修改布局文件
 
 
-```  
+```xml 
 		activity_main_game.xml  布局文件
 
 		<?xml version="1.0" encoding="utf-8"?>
@@ -50,7 +50,7 @@ tags: [Laya]
 
 2. 主文件修改android界面布局文件。分成游戏容器和banner容器
 
-```
+```Java
 	//找到MainActivity.java
 	public void initEngine()
 	{
@@ -77,7 +77,8 @@ tags: [Laya]
  
 *** 
 ### 总结：主要就是重写Laya的布局文件，原本的布局只有一个只有   
-```
+
+```Java
 	View gameView = mPlugin.game_plugin_get_view();
 	this.setContentView(gameView);
 
