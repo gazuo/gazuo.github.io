@@ -4,15 +4,15 @@ subtitle: 'Laya接入原生Banner'
 author: 王壮壮
 layout: post
 date: 2020-05-20
-categories: [Laya]
-tags: [Laya]
+categories: [Creator]
+tags: [Creator]
 ---
  
-### 由于工作需要Laya接入原生SDK,接入激励视频和图文信息流功能。遇到banner需要在增加一个布局文件才能显示的问题。因为对android原生层面不是很熟悉。故记录一下解决过程。
+### 由于工作需要Creator接入原生SDK,接入激励视频和图文信息流功能。遇到banner需要在增加一个布局文件才能显示的问题。因为对android原生层面不是很熟悉。故记录一下解决过程。
  
 # 解决过程
 
-### 技术分析：查看Laya接入工程发现只存在一个android布局界面显示Laya渲染的游戏界面百度搜索一番尝试写了一个布局文件折腾都失败发现setContentView后会覆盖掉游戏界面。或者添加SDK banner View的是空异常报错。
+### 技术分析：查看Laya接入工程发现只存在一个android布局界面显示Creator渲染的游戏界面写了一个布局文件折腾都失败发现setContentView后会覆盖掉游戏界面。或者添加SDK banner View的是空异常报错。
 
 ### 下面直接贴代码
 
