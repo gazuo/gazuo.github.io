@@ -1,5 +1,5 @@
 ---
-title:Creator and Banner
+title: Creator and Banner
 subtitle: 'Creator接入原生Banner'
 author: 王壮壮
 layout: post
