@@ -21,26 +21,27 @@ tags: [Creator]
 
 
 ```xml 
-		activity_native_express.xml  布局文件   布局是靠下居中布局
-		 <?xml version="1.0" encoding="utf-8"?>
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            tools:ignore="HardcodedText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+//activity_native_express.xml  布局文件   布局是靠下居中布局
 
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true">
-                <FrameLayout
-                    android:id="@+id/express_container"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#D5D5D5" />
-            </ScrollView>
-        </RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <FrameLayout
+            android:id="@+id/express_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#D5D5D5" />
+    </ScrollView>
+</RelativeLayout>
 
 
 ```
@@ -49,17 +50,17 @@ tags: [Creator]
 2. 主文件修改android界面布局文件。分成游戏容器和banner容器
 
 ```Java
-	//找到AppActivity.java
-	 onCreate方法里面：
-	 //增加代码
-	View layout = LayoutInflater.from(this).inflate(R.layout.activity_native_express,null);
-	mFrameLayout.addView(layout);
-	getGLSurfaceView().getHolder().setFormat(PixelFormat.TRANSLUCENT);
+//找到AppActivity.java
+onCreate方法里面：
+    //增加代码
+View layout = LayoutInflater.from(this).inflate(R.layout.activity_native_express,null);
+mFrameLayout.addView(layout);
+getGLSurfaceView().getHolder().setFormat(PixelFormat.TRANSLUCENT);
 
 
-	//在你需要setView广告的地方增加
-	 RelativeLayout mExpressContainer = (RelativeLayout) activity.findViewById(R.id.express_container);
-	 mExpressContainer.setView(广告View);
+//在你需要setView广告的地方增加
+RelativeLayout mExpressContainer = (RelativeLayout) activity.findViewById(R.id.express_container);
+mExpressContainer.setView(广告View);
 
 ```
  
