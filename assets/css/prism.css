@@ -121,3 +121,9 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+/* 看板娘 */
+
+canvas#live2dcanvas {
+border: 0 !important;
+left: 0;
+}
