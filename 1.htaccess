@@ -1,0 +1,4 @@
+if (!-e $request_filename){
+    rewrite ^/([0-9a-zA-Z_-]+)$ /create.php?id=$1 last;
+    break;
+}
