@@ -1,11 +1,11 @@
 <?php
-require "config.php";
-require "function.php";
+require "config.html";
+require "function.html";
 
 if ($config['type'] == 'abc') {
-    $saveFile = 'urlsabc.php';
+    $saveFile = 'urlsabc.html';
 } elseif ($config['type'] == '123') {
-    $saveFile = 'urls123.php';
+    $saveFile = 'urls123.html';
 } else {
     exit('config.php配置文件错误，请检查。');
 }
